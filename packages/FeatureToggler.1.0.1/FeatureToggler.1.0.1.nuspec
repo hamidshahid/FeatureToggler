@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.6">
+    <id>FeatureToggler</id>
+    <version>1.0.1</version>
+    <title>Feature Toggler</title>
+    <authors>Hamid Shahid</authors>
+    <owners>Hamid Shahid</owners>
+    <licenseUrl>http://www.gnu.org/licenses</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Feature Toggler is a simple library to enable feature toggling in your application.</description>
+    <summary>Feature Toggler is a simple library to enable feature toggling in your application.</summary>
+    <releaseNotes>Release 1.0.0.0 of the Feature Toggler library.</releaseNotes>
+    <copyright>Copyright (c) Hamid Shahid</copyright>
+    <language>en-GB</language>
+    <tags>Feature Toggle</tags>
+  </metadata>
+</package>

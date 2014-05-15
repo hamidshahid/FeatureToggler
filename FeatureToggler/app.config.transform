@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="featureConfiguration" type="FeatureToggler.FeatureConfigSection, FeatureToggler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7ab15751b83f90"/>
+  </configSections>
+  <featureConfiguration>
+    <features>
+      <add name="feature1" toggle="on" />
+      <add name="feature2" toggle="off" />
+    </features>
+  </featureConfiguration>
+</configuration>
