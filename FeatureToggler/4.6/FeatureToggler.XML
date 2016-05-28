@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FeatureToggler</name>
+    </assembly>
+    <members>
+        <member name="T:FeatureToggler.FeatureConfigElement">
+            <summary>
+            Feature Config Element wrapper class
+            </summary>
+        </member>
+        <member name="F:FeatureToggler.FeatureConfigElement.FeatureNameAttribute">
+            <summary>
+            Name of feature attribute
+            </summary>
+        </member>
+        <member name="F:FeatureToggler.FeatureConfigElement.FeatureToggleAttribute">
+            <summary>
+            Name of toggle attribute
+            </summary>
+        </member>
+        <member name="P:FeatureToggler.FeatureConfigElement.Name">
+            <summary>
+            Gets or sets the name of the feature
+            </summary>
+        </member>
+        <member name="P:FeatureToggler.FeatureConfigElement.Toggle">
+            <summary>
+            Gets or sets the toggle of the feature
+            </summary>
+        </member>
+        <member name="T:FeatureToggler.FeatureConfigElementCollection">
+            <summary>
+            Feature Config Element Collection wrapper class
+            </summary>
+        </member>
+        <member name="M:FeatureToggler.FeatureConfigElementCollection.CreateNewElement">
+            <summary>
+            Overridden method that creates a new element in the collection
+            </summary>
+            <returns>The new feature configuration element </returns>
+        </member>
+        <member name="M:FeatureToggler.FeatureConfigElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Overridden method that returns the key attribute of an element
+            </summary>        
+            <param name="element">The element</param>
+            <returns>The key attribute</returns>
+        </member>
+        <member name="T:FeatureToggler.FeatureConfigSection">
+            <summary>
+            Wrapper class for strongly typed configuration setting for features.
+            </summary>
+        </member>
+        <member name="P:FeatureToggler.FeatureConfigSection.Features">
+            <summary>
+            Gets or sets Features Collection in the configuration section
+            </summary>
+        </member>
+        <member name="T:FeatureToggler.FeatureManager">
+            <summary>
+            The Feature Manager class is used by clients to determine if a feature is toggled or not
+            </summary>
+        </member>
+        <member name="F:FeatureToggler.FeatureManager.configurationSection">
+            <summary>
+            The configuration section member variable
+            </summary>
+        </member>
+        <member name="M:FeatureToggler.FeatureManager.HasFeature(System.String)">
+            <summary>
+            Determines if the given feature is on or off
+            </summary>
+            <param name="featureName">The name of the feature</param>
+            <returns>True if the feature is on. False otherwise</returns>
+        </member>
+        <member name="M:FeatureToggler.FeatureManager.IsFeatureOn(FeatureToggler.FeatureConfigElement)">
+            <summary>
+            Determines if the given feature element has toggle on or not.
+            </summary>
+            <param name="featureElement">The feature element</param>
+            <returns>True if there is toggle. False otherwise.</returns>
+        </member>
+    </members>
+</doc>
